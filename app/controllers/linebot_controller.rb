@@ -26,10 +26,10 @@ class LinebotController < ApplicationController
          when Line::Bot::Event::Message
            case event.type
            when Line::Bot::Event::MessageType::Text
-               if event.message["text"] == 'aaa'
+               if event.message["text"] == 'セキュリティ' || 'セコムしてますか？'
                 message = {
                  type: "text",
-                 text: "aaaです"
+                 text: "セコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                 }
                 elsif event.message["text"] == 'bbb'
                     message = {
