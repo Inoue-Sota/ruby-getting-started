@@ -34,12 +34,12 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
                     message = {
                         type:"text",
-                        text:"エスクウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。、\r\n社内はゆりかごやバーカウンターがあり、、\r\nこだわりぬかれたレイアウト♪"
+                        text:"エクスウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
                     }
                 elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
                     message = {
                         type:"text",
-                        text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{100090}"
+                        text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\n\u{100090}"
                     }
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
                     message = {
@@ -51,10 +51,10 @@ class LinebotController < ApplicationController
                         type:"text",
                         text:"株式会社e-Front 島根支店\r\n廃校した校舎がオフィスに変身！\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか？"
                     }
-                elsif event.message["text"] == 'fff'
+                elsif event.message["text"] == '社会の問題点を解決する' || event.message["text"] == '人材育成' || event.message["text"] == 'エンジニアの思いに寄り添う'
                     message = {
                         type:"text",
-                        text:"fffです"
+                        text:"株式会社パソナテック\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで\r\n快適にお仕事"
                     }
                 else
                     message = {
