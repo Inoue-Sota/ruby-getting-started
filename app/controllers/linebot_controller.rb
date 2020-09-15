@@ -31,15 +31,15 @@ class LinebotController < ApplicationController
                  type: "text",
                  text: "セコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                 }
-                elsif event.message["text"] == 'bbb'
+                elsif event.message["text"] == 'ITで世界をHAPPYに' || 'モモンガ'
                     message = {
                         type:"text",
-                        text:"bbbです"
+                        text:"エスクウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。、\r\n社内はゆりかごやバーカウンターがあり、、\r\nこだわりぬかれたレイアウト♪"
                     }
-                elsif event.message["text"] == 'ccc'
+                elsif event.message["text"] == 'ゲーム' || 'コンピュータでもっと楽しい毎日を'
                     message = {
                         type:"text",
-                        text:"cccです"
+                        text:"ゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{1008F}！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{10090}"
                     }
                 elsif event.message["text"] == 'ddd'
                     message = {
