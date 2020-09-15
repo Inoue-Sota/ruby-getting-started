@@ -36,6 +36,26 @@ class LinebotController < ApplicationController
                         type:"text",
                         text:"bbbです"
                     }
+                elsif event.message["text"] == 'ccc'
+                    message = {
+                        type:"text",
+                        text:"cccです"
+                    }
+                elsif event.message["text"] == 'ddd'
+                    message = {
+                        type:"text",
+                        text:"dddです"
+                    }
+                elsif event.message["text"] == 'eee'
+                    message = {
+                        type:"text",
+                        text:"eeeです"
+                    }
+                elsif event.message["text"] == 'fff'
+                    message = {
+                        type:"text",
+                        text:"fffです"
+                    }
                 else
                     message = {
                         type:"text",
