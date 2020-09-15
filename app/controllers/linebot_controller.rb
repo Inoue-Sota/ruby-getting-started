@@ -26,17 +26,17 @@ class LinebotController < ApplicationController
          when Line::Bot::Event::Message
            case event.type
            when Line::Bot::Event::MessageType::Text
-               if event.message["text"] == 'セキュリティ' || 'セコムしてますか？'
+               if event.message["text"] == 'セキュリティ' || event.message["text"] == 'セコムしてますか？'
                 message = {
                  type: "text",
                  text: "セコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                 }
-                elsif event.message["text"] == 'ITで世界をHAPPYに' || 'モモンガ'
+                elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
                     message = {
                         type:"text",
                         text:"エスクウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。、\r\n社内はゆりかごやバーカウンターがあり、、\r\nこだわりぬかれたレイアウト♪"
                     }
-                elsif event.message["text"] == 'ゲーム' || 'コンピュータでもっと楽しい毎日を'
+                elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
                     message = {
                         type:"text",
                         text:"ゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{1008F}！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{10090}"
