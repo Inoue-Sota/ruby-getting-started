@@ -44,12 +44,12 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == 'ddd'
                     message = {
                         type:"text",
-                        text:"dddです"
+                        text:"〈株式会社八雲ソフトウェア〉の\r\n女性社員が3割近く、女性率が高い企業/u{100068}の\r\n駅チカなので松江駅から走って１分！の\r\nオフィスにはファミコンも…！？/u{100085}"
                     }
                 elsif event.message["text"] == 'eee'
                     message = {
                         type:"text",
-                        text:"eeeです"
+                        text:"\u{1008F}"
                     }
                 elsif event.message["text"] == 'fff'
                     message = {
