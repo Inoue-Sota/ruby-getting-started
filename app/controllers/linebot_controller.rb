@@ -39,7 +39,7 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
                     message = {
                         type:"text",
-                        text:"ゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{1008F}！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{10090}"
+                        text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{1008F}！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{10090}"
                     }
                 elsif event.message["text"] == 'ddd'
                     message = {
