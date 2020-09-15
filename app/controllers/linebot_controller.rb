@@ -41,15 +41,15 @@ class LinebotController < ApplicationController
                         type:"text",
                         text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{1008F}！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{10090}"
                     }
-                elsif event.message["text"] == 'ddd'
+                elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
                     message = {
                         type:"text",
                         text:"〈株式会社八雲ソフトウェア〉の\r\n女性社員が3割近く、女性率が高い企業/u{100068}の\r\n駅チカなので松江駅から走って１分！の\r\nオフィスにはファミコンも…！？/u{100085}"
                     }
-                elsif event.message["text"] == 'eee'
+                elsif event.message["text"] == '校舎' || event.message["text"] == '濱記'
                     message = {
                         type:"text",
-                        text:"\u{1008F}"
+                        text:"株式会社e-Front 島根支店\r\n廃校した校舎がオフィスに変身！\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか？"
                     }
                 elsif event.message["text"] == 'fff'
                     message = {
