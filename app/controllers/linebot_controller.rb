@@ -39,7 +39,7 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
                     message = {
                         type:"text",
-                        text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\n\u{100090}"
+                        text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
                     }
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
                     message = {
@@ -54,7 +54,7 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == '社会の問題点を解決する' || event.message["text"] == '人材育成' || event.message["text"] == 'エンジニアの思いに寄り添う'
                     message = {
                         type:"text",
-                        text:"株式会社パソナテック\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで\r\n快適にお仕事"
+                        text:"株式会社パソナテック\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{100033}"
                     }
                 else
                     message = {
