@@ -44,7 +44,7 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
                     message = {
                         type:"text",
-                        text:"〈株式会社八雲ソフトウェア〉\r\n女性社員が3割近く、女性率が高い企業\u{100068}の\r\n駅チカなので松江駅から走って１分！の\r\nオフィスにはファミコンも…！？\u{100085}"
+                        text:"〈株式会社八雲ソフトウェア〉\r\n女性社員が3割も！女性率が高い企業\u{100068}\r\n駅チカなので松江駅から走って１分！\r\nオフィスにはファミコンも…！？\u{100085}"
                     }
                 elsif event.message["text"] == '校舎' || event.message["text"] == '濱記'
                     message = {
