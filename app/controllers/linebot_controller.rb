@@ -27,7 +27,7 @@ class LinebotController < ApplicationController
            case event.type
            when Line::Bot::Event::MessageType::Text
                if event.message["text"] == 'セキュリティ' || event.message["text"] == 'セコムしてますか？'
-                   image_url = "https://gentle-anchorage-97083.herokuapp.com/public/secom1.jpg"
+                   image_url = "https://gentle-anchorage-97083.herokuapp.com/secom1.jpg"
                 message = [
                  {
                   type: "image",
