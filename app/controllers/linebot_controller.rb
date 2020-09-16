@@ -64,7 +64,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10006E}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}\r\nhttp://www.epsilon-software.co.jp/"
+                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています！\u{10006E}\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}\r\nhttp://www.epsilon-software.co.jp/"
                         }
     		        ]
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
