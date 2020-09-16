@@ -47,7 +47,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
+                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
                         }
     		        ]
     		       elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
@@ -101,7 +101,7 @@ class LinebotController < ApplicationController
                 else
                     message = {
                         type:"text",
-                        text:"知らないキーワードです"
+                        text:"キーワード\r\n・セコムしてますか？\r\n・ゲーム\r\n・モモンガ\r\n・人材育成\r\n・ファミコン\r\n・校舎\r\n気になるキーワードを\r\nコメントしてみてね\u{100096}"
                     }
                 end
                 
