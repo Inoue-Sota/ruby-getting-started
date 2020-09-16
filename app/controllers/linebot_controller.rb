@@ -35,15 +35,22 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "セコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
+                         text: "セコム山陰\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                         }
     		        ]
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
-                    message = {
-                        type:"text",
-                        text:"エクスウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
-                    }
-                elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
+                    message = [
+                        {
+                         type: "image",
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/ekusuwea.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/ekusuwea.jpg"
+        		          },
+        		        {
+                         type: "text",
+                         text: "株式会社エクスウェア\r\nエクスウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
+                        }
+    		        ]
+    		       elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
                     message = {
                         type:"text",
                         text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
