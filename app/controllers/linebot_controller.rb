@@ -54,7 +54,7 @@ class LinebotController < ApplicationController
                 elsif event.message["text"] == '社会の問題点を解決する' || event.message["text"] == '人材育成' || event.message["text"] == 'エンジニアの思いに寄り添う'
                     message = {
                         type:"text",
-                        text:"株式会社パソナテック\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{100033}"
+                        text:"株式会社パソナテック\r\nパソナグループのテクノロジー分野の会社。\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで\r\n快適にお仕事\u{100033}"
                     }
                 else
                     message = {
