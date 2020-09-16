@@ -35,7 +35,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "セコム山陰株式会社\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
+                         text: "〈セコム山陰株式会社〉\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                         }
     		        ]
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
@@ -47,7 +47,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "株式会社エクスウェア\r\nエクスウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
+                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！、\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
                         }
     		        ]
     		       elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
@@ -59,24 +59,45 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
+                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
                         }
     		        ]
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
-                    message = {
-                        type:"text",
-                        text:"〈株式会社八雲ソフトウェア〉\r\n女性社員が3割も！女性率が高い企業\u{100068}\r\n駅チカなので松江駅から走って１分！\r\nオフィスにはファミコンも…！？\u{100085}"
-                    }
+                    message = [
+                        {
+                         type: "image",
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/yakumo2.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/yakumo2.jpg"
+        		          },
+        		        {
+                         type: "text",
+                         text: "〈株式会社八雲ソフトウェア〉\r\n女性社員が3割も！女性率が高い企業\u{100068}\r\n駅チカなので松江駅から走って１分！\r\nオフィスにはファミコンも…！？\u{100085}"
+                        }
+    		        ]
                 elsif event.message["text"] == '校舎' || event.message["text"] == '濱記'
-                    message = {
-                        type:"text",
-                        text:"株式会社e-Front 島根支店\r\n廃校した校舎がオフィスに変身！\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか？"
-                    }
+                    message = [
+                        {
+                         type: "image",
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/e-front2.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/e-front2.jpg"
+        		          },
+        		        {
+                         type: "text",
+                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身！\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか？"
+                        }
+    		        ]
                 elsif event.message["text"] == '社会の問題点を解決する' || event.message["text"] == '人材育成' || event.message["text"] == 'エンジニアの思いに寄り添う'
-                    message = {
-                        type:"text",
-                        text:"株式会社パソナテック\r\nパソナグループのテクノロジー分野の会社。\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
-                    }
+                    message = [
+                        {
+                         type: "image",
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/pasona3.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/pasona3.jpg"
+        		          },
+        		        {
+                         type: "text",
+                         text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社。\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
+                        }
+    		        ]
                 else
                     message = {
                         type:"text",
