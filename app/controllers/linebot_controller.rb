@@ -35,7 +35,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈セコム山陰株式会社〉\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。\r\nhttps://www.secom-sanin.co.jp/"
+                         text: "〈セコム山陰株式会社〉\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\u{10008F}\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。\u{10002D}\r\nhttps://www.secom-sanin.co.jp/"
                         }
     		        ]
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
@@ -47,7 +47,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
+                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト\u{100039}"
                         },
         		        {
                          type: "text",
@@ -88,7 +88,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身！\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか？"
+                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身\u{100035}\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか\u{100036}"
                         },
         		        {
                          type: "text",
@@ -105,7 +105,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社。\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
+                         text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社。\u{10008D}\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
                         },
         		        {
                          type: "text",
