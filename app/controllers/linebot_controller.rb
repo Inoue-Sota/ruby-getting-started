@@ -33,11 +33,12 @@ class LinebotController < ApplicationController
                   originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/secom1.jpg",
                      previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/secom1.jpg""
 		          }
-	            ]
+	            
                 message = {
                  type: "text",
                  text: "セコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                 }
+                ]
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
                     message = {
                         type:"text",
