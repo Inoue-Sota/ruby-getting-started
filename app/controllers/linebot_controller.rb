@@ -47,7 +47,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト\u{100039}"
+                         text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社\u{100079}\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト\u{100039}"
                         },
         		        {
                          type: "text",
@@ -64,7 +64,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}\r\nhttp://www.epsilon-software.co.jp/"
+                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10006E}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}\r\nhttp://www.epsilon-software.co.jp/"
                         }
     		        ]
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
@@ -88,7 +88,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身\u{100035}\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか\u{100036}"
+                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身\u{10007B}\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか\u{10005C}"
                         },
         		        {
                          type: "text",
@@ -105,7 +105,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社。\u{10008D}\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
+                         text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社\u{10007F}\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
                         },
         		        {
                          type: "text",
