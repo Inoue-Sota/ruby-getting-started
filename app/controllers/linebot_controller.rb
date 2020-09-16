@@ -35,7 +35,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈セコム山陰株式会社〉\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
+                         text: "〈セコム山陰株式会社〉\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。\r\nhttps://www.secom-sanin.co.jp/"
                         }
     		        ]
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
@@ -48,7 +48,12 @@ class LinebotController < ApplicationController
         		        {
                          type: "text",
                          text: "〈株式会社エクスウェア〉\r\nエクスウェアの島根支社！\r\n通称「MOMONGA LAB島根(モモンガラボ島根)」。\r\n社内はゆりかごやバーカウンターがあり、\r\nこだわりぬかれたレイアウト♪"
+                        },
+        		        {
+                         type: "text",
+                         text: "https://www.xware.co.jp/"
                         }
+
     		        ]
     		       elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
                     message = [
@@ -104,6 +109,7 @@ class LinebotController < ApplicationController
                         text:"キーワード\r\n・セコムしてますか？\r\n・ゲーム\r\n・モモンガ\r\n・人材育成\r\n・ファミコン\r\n・校舎\r\n気になるキーワードを\r\nコメントしてみてね\u{100096}"
                     }
                 end
+                
                 
              client.reply_message(event["replyToken"], message)
            when Line::Bot::Event::MessageType::Location
