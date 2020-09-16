@@ -64,7 +64,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
+                         text: "〈株式会社イプシロンソフトウェア〉\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}\r\nhttp://www.epsilon-software.co.jp/"
                         }
     		        ]
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
@@ -76,7 +76,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社八雲ソフトウェア〉\r\n女性社員が3割も！女性率が高い企業\u{100068}\r\n駅チカなので松江駅から走って１分！\r\nオフィスにはファミコンも…！？\u{100085}"
+                         text: "〈株式会社八雲ソフトウェア〉\r\n女性社員が3割も！女性率が高い企業\u{100068}\r\n駅チカなので松江駅から走って１分！\r\nオフィスにはファミコンも…！？\u{100085}\r\nhttps://8clouds.co.jp/"
                         }
     		        ]
                 elsif event.message["text"] == '校舎' || event.message["text"] == '濱記'
@@ -89,7 +89,12 @@ class LinebotController < ApplicationController
         		        {
                          type: "text",
                          text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身！\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか？"
+                        },
+        		        {
+                         type: "text",
+                         text: "http://shimane.e-front.co.jp/"
                         }
+
     		        ]
                 elsif event.message["text"] == '社会の問題点を解決する' || event.message["text"] == '人材育成' || event.message["text"] == 'エンジニアの思いに寄り添う'
                     message = [
@@ -101,7 +106,12 @@ class LinebotController < ApplicationController
         		        {
                          type: "text",
                          text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社。\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
+                        },
+        		        {
+                         type: "text",
+                         text: "https://www.pasonatech.co.jp/"
                         }
+
     		        ]
                 else
                     message = {
