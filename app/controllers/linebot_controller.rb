@@ -27,11 +27,12 @@ class LinebotController < ApplicationController
            case event.type
            when Line::Bot::Event::MessageType::Text
                if event.message["text"] == 'セキュリティ' || event.message["text"] == 'セコムしてますか？'
+                   image_url = "https://gentle-anchorage-97083.herokuapp.com/public/secom1.jpg"
                 message = [
                  {
                   type: "image",
-                  originalContentUrl:  "https://gentle-anchorage-97083.herokuapp.com/public/secom1.jpg",
-                     previewImageUrl:  "https://gentle-anchorage-97083.herokuapp.com/public/secom1.jpg"
+                  originalContentUrl: image_url,
+                     previewImageUrl: image_url"
 		          }
 	            ]
                 message = {
