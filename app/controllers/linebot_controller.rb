@@ -42,8 +42,8 @@ class LinebotController < ApplicationController
                     message = [
                         {
                          type: "image",
-                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/ekusuwea.jpg",
-                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/ekusuwea.jpg"
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/ekusuwea1.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/ekusuwea1.jpg"
         		          },
         		        {
                          type: "text",
