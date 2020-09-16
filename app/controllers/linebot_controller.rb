@@ -35,7 +35,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "セコム山陰\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
+                         text: "セコム山陰株式会社\r\nセコムグループの地方会社で、\r\nセキュリティ事業を主に行っており、\r\nグループ内では珍しいIT系の部門があります。\r\nネットワークインフラからクラウドまで、\r\n色々な仕事を行っています。"
                         }
     		        ]
                 elsif event.message["text"] == 'ITで世界をHAPPYに' || event.message["text"] == 'モモンガ'
@@ -51,10 +51,17 @@ class LinebotController < ApplicationController
                         }
     		        ]
     		       elsif event.message["text"] == 'ゲーム' || event.message["text"] == 'コンピュータでもっと楽しい毎日を'
-                    message = {
-                        type:"text",
-                        text:"株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
-                    }
+                    message = [
+                        {
+                         type: "image",
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/ipushiron1.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/ipushiron1.jpg"
+        		          },
+        		        {
+                         type: "text",
+                         text: "株式会社イプシロンソフトウェア\r\nゲームやスマートフォン等の\r\nソフトウェアを開発しています\u{10008F}！\r\nマッサージチェアで\r\nゆっくりリラックスも\u{100090}"
+                        }
+    		        ]
                 elsif event.message["text"] == 'ファミコン' || event.message["text"] == '男女比'
                     message = {
                         type:"text",
