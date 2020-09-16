@@ -88,7 +88,7 @@ class LinebotController < ApplicationController
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身\u{10007B}\r\n自然に囲まれた空間で\r\nノスタルジックを感じながら\r\n仕事してみませんか\u{10005C}"
+                         text: "〈株式会社e-Front 島根支店〉\r\n廃校した校舎がオフィスに変身\u{10007B}\r\n自然に囲まれた空間で\r\n牧歌的な雰囲気で\r\nゆるりと仕事をしてみませんか。\u{10005C}"
                         },
         		        {
                          type: "text",
@@ -100,12 +100,12 @@ class LinebotController < ApplicationController
                     message = [
                         {
                          type: "image",
-                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/pasona3.jpg",
-                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/pasona3.jpg"
+                         originalContentUrl: "https://gentle-anchorage-97083.herokuapp.com/pasona1.jpg",
+                         previewImageUrl: "https://gentle-anchorage-97083.herokuapp.com/pasona1.jpg"
         		          },
         		        {
                          type: "text",
-                         text: "〈株式会社パソナテック 島根Lab〉\r\nパソナグループのテクノロジー分野の会社\u{10007F}\r\nIT・ものづくりエンジニアの転職・\r\n派遣求人情報ならパソナテック！\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
+                         text: "〈株式会社パソナテック 島根Lab〉【東証一部パソナグループ】\r\nパソナグループのテクノロジー分野の会社\u{10007F}\r\n全国の拠点と連携しWeb系システムの\r\nニアショア開発をおこなっています。\r\nこだわりのオフィスチェアで快適にお仕事\u{100033}"
                         },
         		        {
                          type: "text",
